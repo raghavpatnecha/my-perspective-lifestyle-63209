@@ -4,16 +4,18 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const shouldBeDark = savedTheme === "dark" || (!savedTheme && prefersDark);
+    const shouldBeDark = savedTheme === "dark" || savedTheme === null;
     
     setIsDark(shouldBeDark);
     if (shouldBeDark) {
       document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
     }
   }, []);
 
@@ -31,16 +33,16 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 py-2 sm:py-4">
+    <header className="sticky top-0 z-50 py-2 sm:py-4 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14 sm:h-16 pill-nav px-4 sm:px-6">
           {/* Logo */}
           <div className="flex items-center min-w-0">
-            <a href="/" className="flex items-center gap-1.5 sm:gap-2">
-              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                <span className="text-primary-foreground font-bold text-base sm:text-lg">P</span>
+            <a href="/" className="flex items-center gap-1.5 sm:gap-2 group">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg flex items-center justify-center flex-shrink-0 bg-gradient-to-br from-primary to-secondary glow-border animate-glow-pulse">
+                <span className="text-background font-bold text-base sm:text-lg">U</span>
               </div>
-              <span className="text-base sm:text-xl font-bold font-serif truncate">Perspective</span>
+              <span className="text-base sm:text-xl font-bold truncate glow-text">UTOPIA</span>
             </a>
           </div>
 
@@ -77,8 +79,8 @@ const Header = () => {
               )}
             </button>
             
-            <Button className="hidden md:flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-2 hover:scale-105 transition-all">
-              Join Now
+            <Button className="hidden md:flex rounded-full px-8 py-2 hover:scale-105 transition-all bg-gradient-to-r from-primary to-secondary text-background font-bold glow-border">
+              Join Utopia
             </Button>
 
             {/* Mobile Menu Button */}
@@ -111,8 +113,8 @@ const Header = () => {
               <a href="/about" className="text-sm font-medium hover:text-accent transition-colors">
                 About
               </a>
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full w-full">
-                Join Now
+              <Button className="rounded-full w-full bg-gradient-to-r from-primary to-secondary text-background font-bold glow-border">
+                Join Utopia
               </Button>
             </nav>
           </div>

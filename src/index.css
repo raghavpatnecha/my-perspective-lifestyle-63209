@@ -8,97 +8,104 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Warm, sophisticated palette inspired by the design */
-    --background: 36 44% 96%;
-    --foreground: 0 0% 18%;
+    /* Neon Purple Futuristic Punk Palette */
+    --background: 280 20% 8%;
+    --foreground: 280 10% 95%;
 
-    --card: 33 40% 94%;
-    --card-foreground: 0 0% 18%;
+    --card: 280 18% 12%;
+    --card-foreground: 280 10% 95%;
 
-    --popover: 36 44% 96%;
-    --popover-foreground: 0 0% 18%;
+    --popover: 280 20% 10%;
+    --popover-foreground: 280 10% 95%;
 
-    --primary: 0 0% 18%;
-    --primary-foreground: 36 44% 96%;
+    --primary: 280 100% 65%;
+    --primary-foreground: 280 20% 10%;
 
-    --secondary: 25 30% 70%;
-    --secondary-foreground: 0 0% 18%;
+    --secondary: 310 95% 60%;
+    --secondary-foreground: 280 20% 10%;
 
-    --muted: 33 30% 88%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 280 15% 20%;
+    --muted-foreground: 280 10% 65%;
 
-    --accent: 140 20% 50%;
-    --accent-foreground: 36 44% 96%;
+    --accent: 190 95% 55%;
+    --accent-foreground: 280 20% 10%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 36 44% 96%;
+    --destructive-foreground: 280 10% 95%;
 
-    --border: 33 25% 85%;
-    --input: 33 25% 85%;
-    --ring: 0 0% 18%;
+    --border: 280 30% 25%;
+    --input: 280 25% 18%;
+    --ring: 280 100% 65%;
 
-    --radius: 1rem;
+    --radius: 1.5rem;
 
+    /* Neon & Glow tokens */
+    --neon-purple: 280 100% 65%;
+    --neon-pink: 310 95% 60%;
+    --neon-cyan: 190 95% 55%;
+    --neon-green: 150 100% 50%;
+    
+    /* Glassmorphism */
+    --glass-bg: 280 20% 15%;
+    --glass-border: 280 30% 30%;
+    
     /* Custom design tokens */
-    --tag-financing: 210 50% 75%;
-    --tag-lifestyle: 140 20% 70%;
-    --tag-community: 25 35% 60%;
-    --tag-wellness: 280 30% 75%;
-    --tag-travel: 195 50% 70%;
-    --tag-creativity: 330 40% 75%;
-    --tag-growth: 50 45% 70%;
+    --tag-financing: 210 85% 65%;
+    --tag-lifestyle: 310 95% 65%;
+    --tag-community: 280 95% 70%;
+    --tag-wellness: 280 85% 70%;
+    --tag-travel: 190 95% 60%;
+    --tag-creativity: 330 90% 65%;
+    --tag-growth: 150 95% 60%;
 
-    /* Polish design tokens */
-    --cream: 40 40% 90%;
-    --cream-foreground: 0 0% 18%;
-    --surface-elevated: 36 44% 98%;
-    --shadow-soft: 0 0% 0%;
+    /* Shadows & Glows */
+    --glow-purple: 0 0 20px hsl(280 100% 65% / 0.4);
+    --glow-pink: 0 0 20px hsl(310 95% 60% / 0.4);
+    --glow-cyan: 0 0 20px hsl(190 95% 55% / 0.4);
+    --shadow-intense: 0 8px 32px 0 hsl(280 100% 10% / 0.5);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 0 0% 10%;
-    --foreground: 36 44% 96%;
+    --background: 280 22% 6%;
+    --foreground: 280 10% 98%;
 
-    --card: 0 0% 14%;
-    --card-foreground: 36 44% 96%;
+    --card: 280 20% 10%;
+    --card-foreground: 280 10% 98%;
 
-    --popover: 0 0% 10%;
-    --popover-foreground: 36 44% 96%;
+    --popover: 280 22% 8%;
+    --popover-foreground: 280 10% 98%;
 
-    --primary: 36 44% 96%;
-    --primary-foreground: 0 0% 18%;
+    --primary: 280 100% 70%;
+    --primary-foreground: 280 22% 8%;
 
-    --secondary: 25 15% 30%;
-    --secondary-foreground: 36 44% 96%;
+    --secondary: 310 95% 65%;
+    --secondary-foreground: 280 22% 8%;
 
-    --muted: 0 0% 20%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 280 15% 18%;
+    --muted-foreground: 280 10% 70%;
 
-    --accent: 140 20% 45%;
-    --accent-foreground: 36 44% 96%;
+    --accent: 190 95% 60%;
+    --accent-foreground: 280 22% 8%;
 
-    --destructive: 0 62% 50%;
-    --destructive-foreground: 36 44% 96%;
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 280 10% 98%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 36 44% 96%;
+    --border: 280 30% 22%;
+    --input: 280 25% 15%;
+    --ring: 280 100% 70%;
 
-    /* Dark mode tag colors */
-    --tag-financing: 210 40% 45%;
-    --tag-lifestyle: 140 20% 40%;
-    --tag-community: 25 30% 40%;
-    --tag-wellness: 280 25% 45%;
-    --tag-travel: 195 40% 45%;
-    --tag-creativity: 330 35% 45%;
-    --tag-growth: 50 40% 45%;
-
-    /* Dark mode polish tokens */
-    --cream: 40 20% 25%;
-    --cream-foreground: 36 44% 96%;
-    --surface-elevated: 0 0% 16%;
-    --shadow-soft: 0 0% 0%;
+    /* Dark mode intensified */
+    --glass-bg: 280 20% 12%;
+    --glass-border: 280 30% 28%;
+    
+    --tag-financing: 210 90% 70%;
+    --tag-lifestyle: 310 95% 70%;
+    --tag-community: 280 95% 75%;
+    --tag-wellness: 280 85% 75%;
+    --tag-travel: 190 95% 65%;
+    --tag-creativity: 330 90% 70%;
+    --tag-growth: 150 95% 65%;
   }
 }
 
@@ -121,22 +128,53 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
+  /* Glassmorphism Cards */
+  .glass-card {
+    @apply bg-[hsl(var(--glass-bg)/0.4)] backdrop-blur-xl border border-[hsl(var(--glass-border)/0.3)] rounded-3xl;
+    box-shadow: var(--shadow-intense), inset 0 0 20px hsl(280 100% 65% / 0.05);
+  }
+
   .card-hover {
     @apply transition-all duration-500 hover:scale-[1.02];
-    box-shadow: 0 4px 20px -4px hsl(var(--shadow-soft) / 0.1);
+    box-shadow: 0 4px 20px -4px hsl(280 100% 65% / 0.2);
   }
 
   .card-hover:hover {
-    box-shadow: 0 20px 40px -10px hsl(var(--shadow-soft) / 0.15);
+    box-shadow: 0 20px 40px -10px hsl(280 100% 65% / 0.4), var(--glow-purple);
   }
 
   .pill-nav {
-    @apply rounded-full bg-[hsl(var(--surface-elevated))] backdrop-blur-lg border border-border/50;
+    @apply rounded-full backdrop-blur-lg border border-[hsl(var(--glass-border)/0.4)];
+    background: linear-gradient(135deg, hsl(var(--glass-bg) / 0.6) 0%, hsl(var(--glass-bg) / 0.3) 100%);
   }
 
   .floating-button {
-    @apply w-12 h-12 rounded-full bg-[hsl(var(--cream)/0.9)] backdrop-blur-sm flex items-center justify-center text-[hsl(var(--cream-foreground))] hover:bg-[hsl(var(--cream))] hover:scale-110 transition-all duration-300;
-    box-shadow: 0 4px 12px -2px hsl(var(--shadow-soft) / 0.15);
+    @apply w-12 h-12 rounded-full backdrop-blur-sm flex items-center justify-center hover:scale-110 transition-all duration-300;
+    background: linear-gradient(135deg, hsl(var(--neon-purple) / 0.8), hsl(var(--neon-pink) / 0.6));
+    box-shadow: var(--glow-purple);
+    color: hsl(var(--foreground));
+  }
+
+  .floating-button:hover {
+    box-shadow: var(--glow-purple), var(--glow-pink);
+  }
+
+  /* Neon glow effects */
+  .glow-text {
+    text-shadow: 0 0 10px hsl(var(--neon-purple) / 0.5),
+                 0 0 20px hsl(var(--neon-purple) / 0.3),
+                 0 0 30px hsl(var(--neon-purple) / 0.2);
+  }
+
+  .glow-border {
+    box-shadow: 0 0 15px hsl(var(--neon-purple) / 0.3),
+                inset 0 0 15px hsl(var(--neon-purple) / 0.1);
+  }
+
+  .glow-border:hover {
+    box-shadow: 0 0 20px hsl(var(--neon-purple) / 0.5),
+                0 0 40px hsl(var(--neon-pink) / 0.3),
+                inset 0 0 20px hsl(var(--neon-purple) / 0.15);
   }
 
   /* Animation keyframes */
