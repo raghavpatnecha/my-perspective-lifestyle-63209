@@ -1,11 +1,8 @@
 import Header from "@/components/Header";
-import ArticleCard from "@/components/ArticleCard";
 import HeroSection from "@/components/HeroSection";
-import { articles } from "@/data/articles";
 import { ArrowRight } from "lucide-react";
 
 const Index = () => {
-  const featuredArticles = articles.slice(0, 6);
 
   return (
     <div className="min-h-screen bg-background animate-fade-in">
@@ -75,23 +72,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Featured Articles Grid */}
-        <section id="articles" className="py-12 md:py-16">
-          <div className="flex items-center justify-between mb-12 animate-slide-up">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight glow-text">Featured Stories</h2>
-            <a href="#all" className="text-sm font-medium text-primary hover:text-secondary transition-colors px-4 py-2 rounded-full glass-card glow-border">
-              View all →
-            </a>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredArticles.map((article, index) => (
-              <div key={article.id} className={`animate-slide-up stagger-${Math.min(index + 1, 6)}`}>
-                <ArticleCard {...article} size="small" />
-              </div>
-            ))}
-          </div>
-        </section>
 
         {/* Join Us Section */}
         <section className="my-20 rounded-[2.5rem] glass-card p-12 md:p-16 text-center animate-scale-in glow-border">

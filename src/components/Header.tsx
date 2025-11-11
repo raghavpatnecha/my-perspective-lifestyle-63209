@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/Utopia_Logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,10 +40,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center min-w-0">
             <a href="/" className="flex items-center gap-1.5 sm:gap-2 group">
-              <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg flex items-center justify-center flex-shrink-0 bg-gradient-to-br from-primary to-secondary glow-border animate-glow-pulse">
-                <span className="text-background font-bold text-base sm:text-lg">U</span>
-              </div>
-              <span className="text-base sm:text-xl font-bold truncate glow-text">UTOPIA</span>
+              <img src={logo} alt="Utopia" className="h-8 sm:h-10 w-auto" />
             </a>
           </div>
 
@@ -50,9 +48,6 @@ const Header = () => {
           <nav className="hidden md:flex items-center gap-2">
             <a href="/" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               Home
-            </a>
-            <a href="/#articles" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
-              Articles
             </a>
             <a href="/wellness" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               Wellness
@@ -100,9 +95,6 @@ const Header = () => {
             <nav className="flex flex-col gap-4">
               <a href="/" className="text-sm font-medium hover:text-accent transition-colors">
                 Home
-              </a>
-              <a href="/#articles" className="text-sm font-medium hover:text-accent transition-colors">
-                Articles
               </a>
               <a href="/wellness" className="text-sm font-medium hover:text-accent transition-colors">
                 Wellness
