@@ -16,9 +16,9 @@ const Index = () => {
         <section id="about" className="py-16 md:py-20">
           <div className="max-w-4xl mx-auto glass-card p-8 md:p-12 animate-slide-up">
             <div className="space-y-6">
-              <div className="flex flex-col items-center gap-3 mb-6">
+              <div className="flex flex-col items-center gap-6 mb-6">
                 <div className="h-1 w-12 bg-gradient-to-r from-secondary to-accent rounded-full animate-shimmer"></div>
-                <h2 className="text-3xl md:text-4xl font-bold glow-text text-center">A media space built for thought</h2>
+                <h2 className="text-4xl md:text-5xl font-bold glow-text text-center">A media space built for thought</h2>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed text-justify">
                 Utopia is an independent media house created to study how the world truly works. 
@@ -39,9 +39,9 @@ const Index = () => {
         <section id="vision" className="py-16 md:py-20">
           <div className="max-w-4xl mx-auto glass-card p-8 md:p-12 animate-slide-up stagger-2 glow-border">
             <div className="space-y-6">
-              <div className="flex flex-col items-center gap-3 mb-6">
+              <div className="flex flex-col items-center gap-6 mb-6">
                 <div className="h-1 w-12 bg-gradient-to-r from-secondary to-accent rounded-full animate-shimmer"></div>
-                <h2 className="text-3xl md:text-4xl font-bold glow-text text-center">Reimagining how the world is understood</h2>
+                <h2 className="text-4xl md:text-5xl font-bold glow-text text-center">Reimagining how the world is understood</h2>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed text-justify">
                 Utopia aims to become a living system of understanding, studying how information travels, 
@@ -59,10 +59,10 @@ const Index = () => {
         {/* Join Us Section */}
         <section className="my-20 rounded-[2.5rem] glass-card p-12 md:p-16 text-center animate-scale-in glow-border">
           <div className="max-w-3xl mx-auto space-y-8">
-            <div className="inline-block animate-float">
-              <div className="h-1 w-12 bg-gradient-to-r from-secondary to-accent rounded-full animate-shimmer mx-auto mb-6"></div>
+            <div className="flex flex-col items-center gap-6 mb-6">
+              <div className="h-1 w-12 bg-gradient-to-r from-secondary to-accent rounded-full animate-shimmer"></div>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight glow-text">Work with intent</h2>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight glow-text">Work with intent</h2>
             <p className="text-xl text-muted-foreground leading-relaxed text-justify">
               We are hiring Media Presenters and Video Journalists to craft short stories that reveal how the world works beneath the surface. 
               You might be a student, creator, or thinker, but what matters most is the ability to explain ideas clearly.
