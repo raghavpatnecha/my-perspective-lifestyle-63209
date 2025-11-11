@@ -39,24 +39,21 @@ const Header = () => {
         <div className="flex items-center justify-between h-14 sm:h-16 pill-nav px-4 sm:px-6">
           {/* Logo */}
           <div className="flex items-center min-w-0">
-            <a href="/" className="flex items-center gap-1.5 sm:gap-2 group">
-              <img src={logo} alt="Utopia" className="h-8 sm:h-10 w-auto" />
+            <a href="/" className="flex items-center gap-1.5 sm:gap-2 group m-[10px]">
+              <img src={logo} alt="Utopia" className="h-26 w-auto" />
             </a>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-2">
-            <a href="/" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
+            <a href="#home" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               Home
             </a>
-            <a href="/wellness" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
-              Wellness
-            </a>
-            <a href="/travel" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
-              Travel
-            </a>
-            <a href="/about" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
+            <a href="#about" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               About
+            </a>
+            <a href="#vision" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
+              Vision
             </a>
           </nav>
 
@@ -93,17 +90,14 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border animate-fade-in">
             <nav className="flex flex-col gap-4">
-              <a href="/" className="text-sm font-medium hover:text-accent transition-colors">
+              <a href="#home" className="text-sm font-medium hover:text-accent transition-colors">
                 Home
               </a>
-              <a href="/wellness" className="text-sm font-medium hover:text-accent transition-colors">
-                Wellness
-              </a>
-              <a href="/travel" className="text-sm font-medium hover:text-accent transition-colors">
-                Travel
-              </a>
-              <a href="/about" className="text-sm font-medium hover:text-accent transition-colors">
+              <a href="#about" className="text-sm font-medium hover:text-accent transition-colors">
                 About
+              </a>
+              <a href="#vision" className="text-sm font-medium hover:text-accent transition-colors">
+                Vision
               </a>
               <Button className="rounded-full w-full bg-gradient-to-r from-primary to-secondary text-background font-bold glow-border">
                 Join Utopia

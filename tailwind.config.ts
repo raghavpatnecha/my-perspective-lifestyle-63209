@@ -128,6 +128,9 @@ export default {
         "float": "float 3s ease-in-out infinite",
         "shimmer": "shimmer 3s ease-in-out infinite",
       },
+      spacing: {
+        '26': '6.5rem',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
