@@ -14,7 +14,7 @@ const Index = () => {
 
         {/* About Section */}
         <section id="about" className="py-16 md:py-20">
-          <div className="max-w-4xl mx-auto glass-card p-8 md:p-12 animate-slide-up">
+          <div className="max-w-4xl mx-auto glass-card p-8 md:p-12 animate-slide-up glow-border">
             <div className="space-y-6">
               <div className="flex flex-col items-center gap-6 mb-6">
                 <div className="h-1 w-12 bg-gradient-to-r from-secondary to-accent rounded-full animate-shimmer"></div>
