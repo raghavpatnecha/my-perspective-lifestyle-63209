@@ -71,9 +71,9 @@ const Header = () => {
               )}
             </button>
             
-            <Button className="hidden md:flex rounded-full px-8 py-2 hover:scale-105 transition-all bg-gradient-to-r from-primary to-secondary text-background font-bold glow-border">
+            <a href="#join" className="hidden md:flex rounded-full px-8 py-2 hover:scale-105 transition-all bg-gradient-to-r from-primary to-secondary text-background font-bold glow-border items-center justify-center">
               Join Utopia
-            </Button>
+            </a>
 
             {/* Mobile Menu Button */}
             <button
@@ -99,9 +99,9 @@ const Header = () => {
               <a href="#vision" className="text-sm font-medium hover:text-accent transition-colors">
                 Vision
               </a>
-              <Button className="rounded-full w-full bg-gradient-to-r from-primary to-secondary text-background font-bold glow-border">
+              <a href="#join" className="rounded-full w-full bg-gradient-to-r from-primary to-secondary text-background font-bold glow-border py-2 text-center block">
                 Join Utopia
-              </Button>
+              </a>
             </nav>
           </div>
         )}
