@@ -71,52 +71,14 @@ const Index = () => {
               Utopia is looking for voices that value precision over volume and speak the truth in a language people trust. 
               For more information, reach out at info@utopiamedia.in
             </p>
-            <button className="group mt-8 px-10 py-4 rounded-full bg-gradient-to-r from-primary to-secondary text-background font-bold text-lg hover:scale-105 transition-all glow-border flex items-center gap-3 mx-auto">
-              Join Utopia
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
           </div>
         </section>
       </main>
 
       {/* Footer */}
       <footer className="border-t border-[hsl(var(--glass-border)/0.3)] mt-16 backdrop-blur-xl">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h3 className="font-semibold mb-4 text-primary">Explore</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="/wellness" className="hover:text-primary transition-colors">Wellness</a></li>
-                <li><a href="/travel" className="hover:text-primary transition-colors">Travel</a></li>
-                <li><a href="/creativity" className="hover:text-primary transition-colors">Creativity</a></li>
-                <li><a href="/growth" className="hover:text-primary transition-colors">Growth</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4 text-primary">About</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="/about" className="hover:text-primary transition-colors">Our Story</a></li>
-                <li><a href="/authors" className="hover:text-primary transition-colors">Authors</a></li>
-                <li><a href="/contact" className="hover:text-primary transition-colors">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4 text-primary">Resources</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="/style-guide" className="hover:text-primary transition-colors">Style Guide</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4 text-primary">Legal</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</a></li>
-                <li><a href="/terms" className="hover:text-primary transition-colors">Terms of Service</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="pt-8 border-t border-[hsl(var(--glass-border)/0.3)] text-center text-sm text-muted-foreground">
-            <p>© 2025 Utopia. All rights reserved.</p>
-          </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-muted-foreground">
+          <p>© 2025 Utopia. All rights reserved.</p>
         </div>
       </footer>
     </div>
