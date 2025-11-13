@@ -39,8 +39,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-14 sm:h-16 pill-nav px-4 sm:px-6">
           {/* Logo */}
           <div className="flex items-center min-w-0">
-            <a href="/" className="flex items-center gap-1.5 sm:gap-2 group m-[10px]">
-              <img src={logo} alt="Utopia" className="h-26 w-auto" />
+            <a href="/" className="flex items-center gap-1.5 sm:gap-2 group">
+              <img src={logo} alt="Utopia" className="h-10 sm:h-12 w-auto" />
             </a>
           </div>
 
