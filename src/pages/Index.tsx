@@ -57,7 +57,7 @@ const Index = () => {
 
 
         {/* Join Us Section */}
-        <section className="my-20 rounded-[2.5rem] glass-card p-12 md:p-16 text-center animate-scale-in glow-border">
+        <section id="join" className="my-20 rounded-[2.5rem] glass-card p-12 md:p-16 text-center animate-scale-in glow-border">
           <div className="max-w-3xl mx-auto space-y-8">
             <div className="flex flex-col items-center gap-6 mb-6">
               <div className="h-1 w-12 bg-gradient-to-r from-secondary to-accent rounded-full animate-shimmer"></div>
